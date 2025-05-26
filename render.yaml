@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: review-checker
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python review_checker_app.py
+    plan: free
